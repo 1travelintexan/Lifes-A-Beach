@@ -40,7 +40,7 @@ app.use(
       maxAge: 24 * 60 * 60 * 1000, // in milliseconds
     },
     store: MongoStore.create({
-      mongoUrl: process.env.MONGODB_URI || "mongodb://127.0.0.1/LifesABeach",
+      mongoUrl: process.env.MONGODB_URI,
       ttl: 24 * 60 * 60, // 1 day => in seconds
     }),
   })
